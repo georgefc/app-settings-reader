@@ -1,19 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AppSettingUtil;
+﻿using AppSettingsReader;
+using System;
 
-namespace AppSettingsReader
+namespace AppSettingsReaderConsoleTest
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Value: {0}", AppSettingUtil.AppSettingUtil.GetValues<int>("IntValue"));
-            Console.WriteLine("Value: {0}", AppSettingUtil.AppSettingUtil.GetValues<bool>("BoolValue"));
-            Console.WriteLine("Value: {0}", AppSettingUtil.AppSettingUtil.GetValues<string>("StringValue"));
+            try
+            {
+                IAppSettingHelper appSettingHelper = new AppSettingHelper();
+
+                Console.WriteLine("Value: {0}", appSettingHelper.GetValues<int>("IntValue"));
+                Console.WriteLine("Value: {0}", appSettingHelper.GetValues<bool>("BoolValue"));
+                Console.WriteLine("Value: {0}", appSettingHelper.GetValues<string>("StringValue"));
+                Console.WriteLine("Value: {0}", appSettingHelper.GetValues<string>("kkk"));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error message:");
+                Console.WriteLine(ex.Message);
+            }
+
             Console.ReadKey();
         }
     }
