@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSettingsReader", "AppSettingUtil\AppSettingsReader.csproj", "{728B359C-6706-4336-9D50-0AFB0BD80C2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSettingsReaderUnitTests", "AppSettingsReaderUnitTests\AppSettingsReaderUnitTests.csproj", "{2114A0EE-4957-4681-B5E1-EC623BC11677}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSettingsReaderTests", "AppSettingsReaderTests\AppSettingsReaderTests.csproj", "{2114A0EE-4957-4681-B5E1-EC623BC11677}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
