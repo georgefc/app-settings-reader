@@ -11,7 +11,7 @@ namespace AppSettingsReader
         /// <summary>
         /// 
         /// </summary>
-        private const string ExceptionMessageArgumentEmptyOrNull = @"The parameter cannot be empty or null.";
+        private const string ExceptionMessageArgumentEmptyOrNull = "The parameter cannot be empty or null.";
 
         /// <summary>
         /// 
