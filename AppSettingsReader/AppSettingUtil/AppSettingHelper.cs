@@ -3,7 +3,7 @@ using System.Configuration;
 
 namespace AppSettingsReader
 {
-    ///<inheritdoc/>
+    ///<inheritdoc cref="IAppSettingHelper"/>
     public class AppSettingHelper : IAppSettingHelper
     {
         #region .:: Property(ies) and constant(s) ::.

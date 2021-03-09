@@ -11,10 +11,9 @@ namespace AppSettingsReaderConsoleTest
             {
                 IAppSettingHelper appSettingHelper = new AppSettingHelper();
 
-                Console.WriteLine("Value: {0}", appSettingHelper.GetValues<int>("IntValue"));
-                Console.WriteLine("Value: {0}", appSettingHelper.GetValues<bool>("BoolValue"));
-                Console.WriteLine("Value: {0}", appSettingHelper.GetValues<string>("StringValue"));
-                Console.WriteLine("Value: {0}", appSettingHelper.GetValues<string>("kkk"));
+                Console.WriteLine("Value: {0}\r\n", appSettingHelper.GetValues<int>("IntValue"));
+                Console.WriteLine("Value: {0}\r\n", appSettingHelper.GetValues<bool>("BoolValue"));
+                Console.WriteLine("Value: {0}\r\n", appSettingHelper.GetValues<string>("StringValue"));
             }
             catch (Exception ex)
             {
